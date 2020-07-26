@@ -45,5 +45,7 @@ We plan to develop predictive models that will use the party affiliation of a st
 </ol>
 
 <h3>Known Issues (problems with predictors, reporting, bias, etc.)</h3>
+<p>One issue might be that there is not necessarily uniformity in how states report testing, deaths, hospitalizations, and confirmed cases. So this must be kept in mind when comparing numbers between the states.</p>
  
 <h3>Conclusion</h3>
+<p>This is where the conclusion will go</p>
