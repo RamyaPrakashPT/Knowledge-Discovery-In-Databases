@@ -11,7 +11,9 @@
 </ul>
 
 <h3>Professor:</h3>
-- Dr. Pamela Thompson | http://www.profthompson.net/
+<ul>
+<li>Dr. Pamela Thompson | http://www.profthompson.net/ </li>
+</ul>
 
 <h3>Project Introduction</h3>
 	It has been several months since the COVID-19 pandemic began its rapid spread across the globe. There has been high variability in the types of responses taken by local and national leadership in attempts to react to the virus with differing degrees of success. For this project we narrow our focus to the situation in the United States as we investigate the effect of the political parties of State Governors and of state closure decisions on each state’s COVID-19 outcomes. 
