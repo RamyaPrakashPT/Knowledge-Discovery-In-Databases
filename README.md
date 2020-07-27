@@ -1,7 +1,7 @@
 # COVID-19: State Responses and Their Impact
 ## Knowledge Discovery in Databases Final Project
  
-<h3>Team Members</h3> 
+<h3>Team Members:</h3> 
 <ul>
 <li>Hari Chamlagai | https://github.com/chamlagaig</li>
 <li>James Mason | https://github.com/jkpm18</li>
@@ -9,6 +9,9 @@
 <li>Phil Nguyen | https://github.com/gong-boy</li>
 <li>Ramya Prakash | https://github.com/RamyaPrakashPT</li>
 </ul>
+
+<h3>Professor:</h3>
+- Dr. Pamela Thompson | http://www.profthompson.net/
 
 <h3>Project Introduction</h3>
 	It has been several months since the COVID-19 pandemic began its rapid spread across the globe. There has been high variability in the types of responses taken by local and national leadership in attempts to react to the virus with differing degrees of success. For this project we narrow our focus to the situation in the United States as we investigate the effect of the political parties of State Governors and of state closure decisions on each state’s COVID-19 outcomes. 
@@ -36,7 +39,7 @@ What is the impact of the State Governor’s Political Party in addressing Covid
 
 <h3>Approach:</h3>
 <ol>
-<li><b>Data understanding and EDA:</b></li>
+<li><b>Data understanding and EDA</b></li>
 <li><b>Date Preparation:</b>
 We combined several publicly-available data sets.</li>  
 <li><b>Machine Learning (if applicable - supervised, unsupervised):</b>
