@@ -3,11 +3,11 @@
  
 <h3>Team Members</h3> 
 <ul>
-<li>Hari Chamlagai</li>
-<li>James Mason</li>
-<li>Soumyadip Mitra</li>
-<li>Phil Nguyen</li>
-<li>Ramya Prakash</li>
+<li>Hari Chamlagai | https://github.com/chamlagaig</li>
+<li>James Mason | https://github.com/jkpm18</li>
+<li>Soumyadip Mitra | https://github.com/soumyadipmitra</li>
+<li>Phil Nguyen | https://github.com/gong-boy</li>
+<li>Ramya Prakash | https://github.com/RamyaPrakashPT</li>
 </ul>
 
 <h3>Project Introduction</h3>
