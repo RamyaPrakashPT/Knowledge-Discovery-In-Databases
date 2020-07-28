@@ -32,8 +32,8 @@
 <h3>Data Sources</h3>
 <ol>
 <li>COVID-19 Data Repository by CSSE at Johns Hopkins (https://github.com/CSSEGISandData/COVID-19)</li>
-<li>Kaggle COVID-19 Predictors data set (https://www.kaggle.com/nightranger77/covid19-demographic-predictors)</li>
-<li>North Carolina Population Density County Rank in 2014 (http://www.usa.com/rank/north-carolina-state--population-density--county-rank.htm)</li>
+<li>U.S. Governors by Age (https://en.wikipedia.org/wiki/List_of_current_United_States_governors_by_age)</li>
+<li>U.S. Governors Data (https://en.wikipedia.org/wiki/List_of_United_States_governors)</li>
 <li>School Closures Data Set (https://www.edweek.org/ew/section/multimedia/map-coronavirus-and-school-closures.html)</li>
 <li>Policy Actions Data Set (https://www.kff.org/coronavirus-covid-19/issue-brief/state-data-and-policy-actions-to-address-coronavirus/)</li>
 </ol>
