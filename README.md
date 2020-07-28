@@ -37,6 +37,7 @@
 <li>School Closures Data Set (https://www.edweek.org/ew/section/multimedia/map-coronavirus-and-school-closures.html)</li>
 <li>Policy Actions Data Set (https://www.kff.org/coronavirus-covid-19/issue-brief/state-data-and-policy-actions-to-address-coronavirus/)</li>
 <li> Bureau of Economic Analysis: State GDP (https://www.bea.gov/news/2020/gross-domestic-product-state-1st-quarter-2020))</li>	
+<li>U.S. Census State Populations (https://www.census.gov/data/tables/time-series/demo/popest/2010s-state-total.html)</li>	
 </ol>
 
 
