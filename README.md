@@ -35,6 +35,7 @@
 <li>COVID-19 Data Repository by CSSE at Johns Hopkins (https://github.com/CSSEGISandData/COVID-19)</li>
 <li>U.S. Governors by Age (https://en.wikipedia.org/wiki/List_of_current_United_States_governors_by_age)</li>
 <li>U.S. Governors Data (https://en.wikipedia.org/wiki/List_of_United_States_governors)</li>
+<li>Stay-At-Home Order Dates (https://www.kff.org/coronavirus-policy-watch/stay-at-home-orders-to-fight-covid19/)</li>	
 <li>School Closures Data Set (https://www.edweek.org/ew/section/multimedia/map-coronavirus-and-school-closures.html)</li>
 <li>Policy Actions Data Set (https://www.kff.org/coronavirus-covid-19/issue-brief/state-data-and-policy-actions-to-address-coronavirus/)</li>
 <li> Bureau of Economic Analysis: State GDP (https://www.bea.gov/news/2020/gross-domestic-product-state-1st-quarter-2020)</li>	
