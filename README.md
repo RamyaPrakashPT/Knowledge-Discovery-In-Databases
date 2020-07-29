@@ -27,6 +27,7 @@
 <ol>
 <li>CDC Weekly Surveillance Summary of U.S. COVID-19 Activity (https://www.cdc.gov/coronavirus/2019-ncov/covid-data/covidview/index.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fcovid-data%2Fcovidview.html)</li>
 <li>COVID-19 data processing with Pandas DataFrame (https://towardsdatascience.com/covid-19-data-processing-58aaa3663f6)</li>
+<li>COVID-19 Timeline (https://abcnews.go.com/Health/timeline-coronavirus-started/story?id=69435165)</li>	
 </ol>
 
 <h3>Data Sources</h3>
