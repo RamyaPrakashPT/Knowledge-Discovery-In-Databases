@@ -61,11 +61,11 @@
 
 <p>Incident_Rate Model Results (with OLS fit to all 50 states):</p>
 
-![IncidentRateModel](https://github.com/RamyaPrakashPT/Knowledge-Discovery-In-Databases/blob/master/img/IncidentRateModel.png)
+![IncidentRateModel](https://github.com/RamyaPrakashPT/Knowledge-Discovery-In-Databases/blob/master/img/IncidentRate_Coeffs.png)
 
 <p>log_DeathsPerMillion Model Results (with OLS fit to all 50 states):</p>
 
-![DeathsPerMillionModel](https://github.com/RamyaPrakashPT/Knowledge-Discovery-In-Databases/blob/master/img/DeathRateModel.png)
+![DeathsPerMillionModel](https://github.com/RamyaPrakashPT/Knowledge-Discovery-In-Databases/blob/master/img/DeathRate_Coeffs.png)
 
 
 
