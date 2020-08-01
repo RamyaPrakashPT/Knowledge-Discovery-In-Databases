@@ -57,7 +57,7 @@ We plan to develop predictive models that will use the party affiliation of a st
 </ol>
 
 <h3>Known Issues (problems with predictors, reporting, bias, etc.)</h3>
-<p>One issue might be that there is not necessarily uniformity in how states report testing, deaths, hospitalizations, and confirmed cases. So this must be kept in mind when comparing numbers between the states.</p>
+<p>One significant issue might be that there is not necessarily uniformity in how states report testing, deaths, hospitalizations, and confirmed cases. So this must be kept in mind when comparing numbers between the states. Another issue is sample size. When building a model using predictor variables to model the Incident Rate and Death Rate per state, the data by definition will only have 50 observations (one observation for each state). So the size of the data set for such an analysis is not as large as most “big data” data sets. </p>
  
 <h3>Conclusion</h3>
 <p>This is where the conclusion will go</p>
