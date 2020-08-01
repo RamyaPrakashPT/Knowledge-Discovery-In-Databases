@@ -21,7 +21,7 @@
 
 
 <h3>Research Question</h3>
-<ul><li>What is the impact of the State Governor’s Political Party in addressing Covid-19 pandemic?</li></ul>
+<p>What is the impact of the State Governor’s Political Party in addressing Covid-19 pandemic?</p>
 
 
 <h3>Relevant Domain Information</h3>
