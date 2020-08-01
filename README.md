@@ -1,4 +1,4 @@
-# COVID-19: State Responses and Their Impact
+# COVID-19: Impact of State Governor Along With Controlling Features
 ## Knowledge Discovery in Databases Final Project
  
 <h3>Team Members:</h3> 
