@@ -64,21 +64,21 @@
 <ul>
 	<li>Dependent Variables</li>
 	<ol>
-		<li>Incident_Rate           Cases per 100,000 persons</li>
-		<li>log_DeathsPerMillion    Natural log of the number of deaths per million persons</li>
+		<li><b>Incident_Rate</b>: Cases per 100,000 persons</li>
+		<li><b>log_DeathsPerMillion</b>: Natural log of the number of deaths per million persons</li>
 	</ol>
 	<li>Predictor Features Explored</li>
 	<ol>
-		<li>Testing_Rate			Number of tests per 100,000 persons</li>
-		<li>Population_Density		Number of people per square mile</li>
-		<li>Med_HHI_thousands		Median household income (in thousands of dollars)</li>
-		<li>GDP_Billions			State GDP (in thousands of dollars)</li>
-		<li>Sex_F				Sex (1 if female, 0 if male)</li>
-		<li>Party_Democratic		Political party (1 if Democratic, 0 if Republican)</li>
-		<li>Gov_Tenure_at_Onset	Number of months governor was in office as of 01/21/2020</li>
-		<li>Gov_Age_at_Onset		Age in years of governor as of 01/21/2020</li>
-		<li>SAHO_Response_Time	Number of days between 01/21/2020 and stay-at-home order</li>
-		<li>Pct_65Plus 			Percent of each state’s residents who are 65+ years old</li>
+		<li><b>Testing_Rate</b>: Number of tests per 100,000 persons</li>
+		<li><b>Population_Density</b>: Number of people per square mile</li>
+		<li><b>Med_HHI_thousands</b>: Median household income (in thousands of dollars)</li>
+		<li><b>GDP_Billions</b>: State GDP (in thousands of dollars)</li>
+		<li><b>Sex_F</b>: Sex (1 if female, 0 if male)</li>
+		<li><b>Party_Democratic</b>: Political party (1 if Democratic, 0 if Republican)</li>
+		<li><b>Gov_Tenure_at_Onset</b>: Number of months governor was in office as of 01/21/2020</li>
+		<li><b>Gov_Age_at_Onset</b>: Age in years of governor as of 01/21/2020</li>
+		<li><b>SAHO_Response_Time</b>: Number of days between 01/21/2020 and stay-at-home order</li>
+		<li><b>Pct_65Plus</b>: Percent of each state’s residents who are 65+ years old</li>
 	</ol>
 </ul></p>
 
