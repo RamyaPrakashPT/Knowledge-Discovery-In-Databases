@@ -59,6 +59,15 @@
 
 <h3>Machine Learning</h3>
 
+<p>Incident_Rate Model Results (with OLS fit to all 50 states):</p>
+
+![IncidentRateModel](https://github.com/RamyaPrakashPT/Knowledge-Discovery-In-Databases/blob/master/img/IncidentRateModel.png)
+
+<p>log_DeathsPerMillion Model Results (with OLS fit to all 50 states):</p>
+
+![DeathsPerMillionModel](https://github.com/RamyaPrakashPT/Knowledge-Discovery-In-Databases/blob/master/img/DeathRateModel.png)
+
+
 
 <h3>Evaluation</h3>  	  	
 
