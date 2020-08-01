@@ -24,13 +24,6 @@
 <p>What is the impact of the State Governor’s Political Party in addressing Covid-19 pandemic?</p>
 
 
-<h3>Relevant Domain Information</h3>
-<ol>
-<li>CDC Weekly Surveillance Summary of U.S. COVID-19 Activity (https://www.cdc.gov/coronavirus/2019-ncov/covid-data/covidview/index.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fcovid-data%2Fcovidview.html)</li>
-<li>COVID-19 data processing with Pandas DataFrame (https://towardsdatascience.com/covid-19-data-processing-58aaa3663f6)</li>
-<li>COVID-19 Timeline (https://abcnews.go.com/Health/timeline-coronavirus-started/story?id=69435165)</li>	
-</ol>
-
 <h3>Data Sources</h3>
 <ol>
 <li>COVID-19 Data Repository by CSSE at Johns Hopkins (https://github.com/CSSEGISandData/COVID-19)</li>
@@ -47,18 +40,32 @@
 </ol>
 
 
-<h3>Approach:</h3>
+<h3>Application of the CRISP-DM Process</h3>
+
+
+<h3>Domain Knowledge</h3>
 <ol>
-<li><b>Data understanding and EDA</b></li>
-<li><b>Date Preparation:</b>
-We combined several publicly-available data sets.</li>  
-<li><b>Machine Learning (if applicable - supervised, unsupervised):</b>
-We plan to develop predictive models that will use the party affiliation of a state’s governor as well as certain closure decisions to predict current hospitalization rate, deaths/million and cases/million. We intend to control for factors such as state GDP, household income, population, and large city count.</li>
-<li><b>Evaluation:</b></li>  	  	
+<li>CDC Weekly Surveillance Summary of U.S. COVID-19 Activity (https://www.cdc.gov/coronavirus/2019-ncov/covid-data/covidview/index.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fcovid-data%2Fcovidview.html)</li>
+<li>COVID-19 data processing with Pandas DataFrame (https://towardsdatascience.com/covid-19-data-processing-58aaa3663f6)</li>
+<li>COVID-19 Timeline (https://abcnews.go.com/Health/timeline-coronavirus-started/story?id=69435165)</li>	
 </ol>
+
+
+<h3>Data Understanding and EDA</h3>
+
+
+<h3>Date Preparation</h3>
+
+
+<h3>Machine Learning</h3>
+
+
+<h3>Evaluation</h3>  	  	
+
 
 <h3>Known Issues (problems with predictors, reporting, bias, etc.)</h3>
 <p>One significant issue might be that there is not necessarily uniformity in how states report testing, deaths, hospitalizations, and confirmed cases. So this must be kept in mind when comparing numbers between the states. Another issue is sample size. When building a model using predictor variables to model the Incident Rate and Death Rate per state, the data by definition will only have 50 observations (one observation for each state). So the size of the data set for such an analysis is not as large as most “big data” data sets. </p>
  
+ 
 <h3>Conclusion</h3>
-<p>This is where the conclusion will go</p>
+
