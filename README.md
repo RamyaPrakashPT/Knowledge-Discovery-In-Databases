@@ -1,5 +1,4 @@
-<h1> COVID-19:</h1> 
-<h1>Impact of state governor and controlling features </h1>
+<h1> COVID-19: Impact of state governor and controlling features </h1>
 <h2> Knowledge Discovery in Databases Final Project </h2>
  
 <h3>Team Members:</h3> 
