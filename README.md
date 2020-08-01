@@ -63,12 +63,12 @@
 <p>Below is a list of all variables that were considered in the analysis. Note that some of the predictor variables were ultimately dropped for various reasons. For example, Gov_Age_at_Onset and Pct_65Plus both were dropped due to high VIF scores indicating multicollinearity issues, and SAHO_Response_Time was dropped because it was not significant in either model (with p-values above 0.9), and it was the one column for which imputation was required.
 <ul>
 	<li>Dependent Variables</li>
-	<ol>
+	<ul>
 		<li><b>Incident_Rate</b>: Cases per 100,000 persons</li>
 		<li><b>log_DeathsPerMillion</b>: Natural log of the number of deaths per million persons</li>
-	</ol>
+	</ul>
 	<li>Predictor Features Explored</li>
-	<ol>
+	<ul>
 		<li><b>Testing_Rate</b>: Number of tests per 100,000 persons</li>
 		<li><b>Population_Density</b>: Number of people per square mile</li>
 		<li><b>Med_HHI_thousands</b>: Median household income (in thousands of dollars)</li>
@@ -79,7 +79,7 @@
 		<li><b>Gov_Age_at_Onset</b>: Age in years of governor as of 01/21/2020</li>
 		<li><b>SAHO_Response_Time</b>: Number of days between 01/21/2020 and stay-at-home order</li>
 		<li><b>Pct_65Plus</b>: Percent of each state’s residents who are 65+ years old</li>
-	</ol>
+	</ul>
 </ul></p>
 
 
