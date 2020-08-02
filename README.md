@@ -53,6 +53,7 @@
 
 <h3>Data Understanding and EDA</h3>
 We have used different data and merged them together using the selected columns of our interest. Our project focuses on the Covid-19 pandemic in the United States. The names of the data can be found in the src code. Below is a  brief introduction of each data used.
+
 07-24-2020_US.csv: This data is about the daily report of Covid-19 in the United States which contains information like incident rate, deaths, confirms, recovered, mortality rate etc for each state. The data was obtained from the COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University. 
 GOVERNORS.csv: This data contains the governors sex, data of birth and inauguration date for each state. It was obtained from Wikipedia. 
 CENSUS_State_Populations.csv: This data is used to obtain the population information which is used to calculate the deaths per million for each state. The data was obtained from the US Census Bureau. 
@@ -61,6 +62,7 @@ HH_Income.csv: This data obtained from the Kaiser Family Foundation contains the
 State_GDP.csv: This data obtained from the Bureau of Economic Analysis, U.S. Department of Commerce. It contains the GDP of each state. 
 State_Stay_At_Home_Dates.csv: This data is used to obtain the stay at home order for each state. Nine states have missing values because the state at home order was not issued in those states when the data was published. 
 Population_Distribution_by_Age.csv: This data obtained from the Kaiser Family Foundation  is used to obtain the population of 65+ people in each state. 
+
 After the base data set is created, different types of exploratory data analysis are performed to obtain the   underlying patterns, structure,trends and relationships among different variables. Histograms and box plots are used to check the normality and distribution of variables like Incident_Rate, DeathPerMillion and LogDeathPerMillion etc. Heatmap is used to check the correlation among our dependent and predictive variables. Scatter plots matrix is used to visualize the relationship among our variables of interest. Similarly, diagnostic plots matrix is used to visualize the relationship between actual virus predicted incident rate for both training and testing data. The visualizations of all the EDAs can be seen in the source code file. 
 
 
