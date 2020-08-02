@@ -1,13 +1,18 @@
+<div align=”center”>
+	
 <h1> COVID-19: Impact of state governor and controlling features </h1>
-<h2> Knowledge Discovery in Databases Final Project </h2>
+<h2> Knowledge Discovery in Databases (DSBA-6162) Final Project </h2>
+<h2> for University of North Carolina at Charlotte (UNCC) </h2>
+
+</div>
  
 <h3>Team Members:</h3> 
 <ul>
-<li>Hari Chamlagai | https://github.com/chamlagaig</li>
-<li>James Mason | https://github.com/jkpm18</li>
-<li>Soumyadip Mitra | https://github.com/soumyadipmitra</li>
-<li>Phil Nguyen | https://github.com/gong-boy</li>
-<li>Ramya Prakash | https://github.com/RamyaPrakashPT</li>
+<li>Hari Chamlagai     | https://github.com/chamlagaig</li>
+<li>James Mason        | https://github.com/jkpm18</li>
+<li>Soumyadip Mitra    | https://github.com/soumyadipmitra</li>
+<li>Phil Nguyen        | https://github.com/gong-boy</li>
+<li>Ramya Prakash      | https://github.com/RamyaPrakashPT</li>
 </ul>
 
 <h3>Professor:</h3>
@@ -41,36 +46,61 @@
 
 
 <h3>Application of the CRISP-DM Process</h3>
+<p>The CRISP-DM process breaks down the data mining workflow into six major phases namely Business Understanding, Data Understanding, Data Preparation, Modeling, Evaluation and Deployment. In this project, we worked on the first five phases.</p>
+<p>While working on the Business Understanding phase, we decided to work on finding out how the different factors related to the State Governor have influenced the spread of Coronavirus infection in each state. We decided to look at when the schools were closed down in each state and how the political affiliation, age, gender and other factors related to each state’s Governor has impacted the containment of the infection.</p>
+<p>Based on the outcome of the Business Understanding phase, in Data Understanding phase we started researching what kind of data we need and found out that we need the COVID-19 counts for each state at different time intervals, the Governor details for each state, the school closing information dataset along with few other supporting dataset.</p>
+<p>In the Data Preparation phase, we cleaned each of the datasets and merged them together into one single dataset. We then looked at each variable, their distribution, variance and did Exploratory Data Analysis to make the data ready for modeling. We used Lasso regression to find out which features are more significant for our model.</p>
+<p>In the Modeling phase, we used Linear Regression models to find the trends and patterns of the spread of the infection in each state and tried to find their relationships with Governor’s attributes.</p>
+<p>We utilized the Evaluation phase to evaluate the model statistics and find inferences from the results.</p>
 
 
 <h3>Domain Knowledge</h3>
-<ol>
-<li>CDC Weekly Surveillance Summary of U.S. COVID-19 Activity (https://www.cdc.gov/coronavirus/2019-ncov/covid-data/covidview/index.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fcovid-data%2Fcovidview.html)</li>
-<li>COVID-19 data processing with Pandas DataFrame (https://towardsdatascience.com/covid-19-data-processing-58aaa3663f6)</li>
-<li>COVID-19 Timeline (https://abcnews.go.com/Health/timeline-coronavirus-started/story?id=69435165)</li>	
-</ol>
+<p><b>COVID-19 Timeline:</b> The novel COVID-19 coronavirus outbreak, which began in Wuhan,China, in December, has expanded to touch nearly every corner of the globe. Hundreds of thousands of people around the world have been sickened and thousands of others have died. Here is the complete timeline of the outbreak:</p> <p>https://abcnews.go.com/Health/timeline-coronavirus-started/story?id=69435165</p>
+
+<p><b>State policy actions to address covid-19 pandemic:</b> With the number of  COVID-19 cases growing rapidly in United States and around the world,on March 13, 2020, President Trump declared a state of emergency 
+over the coronavirus in an effort to enhance the federal government’s response to the pandemic.</p>
+<p>Controlling the spread of the virus requires aggressive action from the states and the federal government. States have taken a number of actions to mitigate the spread of the virus and reduce barriers to testing and treatment for those affected.States have taken several social distancing measures such as Stay At Home Order, Non Essential Business closures,Bans on large Gathering, Restaurant Limits, covid-19 health policy actions and so on.The coronavirus pandemic forced a near-total shutdown of school buildings in the spring of 2020, it was an historic upheaval of K-12 schooling in the United States. </p>
+<p>https://www.kff.org/coronavirus-covid-19/issue-brief/state-data-and-policy-actions-to-address-coronavirus/</p>
+
+<p><b>CDC Weekly Surveillance Summary of U.S. COVID-19 Activity:</b></p> <p>https://www.cdc.gov/coronavirus/2019-ncov/covid-data/covidview/index.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fcovid-data%2Fcovidview.html</p>
+
+<p><b>COVID-19 Data Processing Ideas:</b></p> <p>https://towardsdatascience.com/covid-19-data-processing-58aaa3663f6</p>
+
+
 
 
 <h3>Data Understanding and EDA</h3>
-We have used different data and merged them together using the selected columns of our interest. Our project focuses on the Covid-19 pandemic in the United States. The names of the data can be found in the src code. Below is a  brief introduction of each data used:
+<p>We have used different data and merged them together using the selected columns of our interest. Our project focuses on the Covid-19 pandemic in the United States. The names of the data can be found in the src code. Below is a  brief introduction of each data used:</p>
+<ol>
+<li>07-24-2020_US.csv: This data is about the daily report of Covid-19 in the United States which contains information like incident rate, deaths, confirms, recovered, mortality rate etc for each state. The data was obtained from the COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University.</li>
 
-07-24-2020_US.csv: This data is about the daily report of Covid-19 in the United States which contains information like incident rate, deaths, confirms, recovered, mortality rate etc for each state. The data was obtained from the COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University.
+<li>GOVERNORS.csv: This data contains the governors sex, data of birth and inauguration date for each state. It was obtained from Wikipedia.</li> 
 
-GOVERNORS.csv: This data contains the governors sex, data of birth and inauguration date for each state. It was obtained from Wikipedia. 
+<li>CENSUS_State_Populations.csv: This data is used to obtain the population information which is used to calculate the deaths per million for each state. The data was obtained from the US Census Bureau. </li>
 
-CENSUS_State_Populations.csv: This data is used to obtain the population information which is used to calculate the deaths per million for each state. The data was obtained from the US Census Bureau. 
+<li>CENSUS_StateAreaMeasurements.csv: This data obtained from the US Census Bureau gives the area of states. This data is used to obtain the population density for each state.</li>
 
-CENSUS_StateAreaMeasurements.csv: This data obtained from the US Census Bureau gives the area of states. This data is used to obtain the population density for each state.
+<li>HH_Income.csv: This data obtained from the Kaiser Family Foundation contains the median family income for each state. </li>
 
-HH_Income.csv: This data obtained from the Kaiser Family Foundation contains the median family income for each state. 
+<li>State_GDP.csv: This data obtained from the Bureau of Economic Analysis, U.S. Department of Commerce. It contains the GDP of each state. </li>
 
-State_GDP.csv: This data obtained from the Bureau of Economic Analysis, U.S. Department of Commerce. It contains the GDP of each state. 
+<li>State_Stay_At_Home_Dates.csv: This data is used to obtain the stay at home order for each state. Nine states have missing values because the state at home order was not issued in those states when the data was published. </li>
 
-State_Stay_At_Home_Dates.csv: This data is used to obtain the stay at home order for each state. Nine states have missing values because the state at home order was not issued in those states when the data was published. 
+<li>Population_Distribution_by_Age.csv: This data obtained from the Kaiser Family Foundation  is used to obtain the population of 65+ people in each state. </li>
 
-Population_Distribution_by_Age.csv: This data obtained from the Kaiser Family Foundation  is used to obtain the population of 65+ people in each state. 
-
-After the base data set is created, different types of exploratory data analysis are performed to obtain the   underlying patterns, structure,trends and relationships among different variables. Histograms and box plots are used to check the normality and distribution of variables like Incident_Rate, DeathPerMillion and LogDeathPerMillion etc. Heatmap is used to check the correlation among our dependent and predictive variables. Scatter plots matrix is used to visualize the relationship among our variables of interest. Similarly, diagnostic plots matrix is used to visualize the relationship between actual virus predicted incident rate for both training and testing data. The visualizations of all the EDAs can be seen in the source code file. 
+<p>After the base data set is created, different types of exploratory data analysis are performed to obtain the   underlying patterns, structure,trends and relationships among different variables. Histograms and box plots are used to check the normality and distribution of variables like Incident_Rate, DeathPerMillion and LogDeathPerMillion etc. Heatmap is used to check the correlation among our dependent and predictive variables. Scatter plots matrix is used to visualize the relationship among our variables of interest. Similarly, diagnostic plots matrix is used to visualize the relationship between actual virus predicted incident rate for both training and testing data.</p>
+<p>We examined the distribution density of the numeric variables of interest and transformed them as required for our modeling.</p>
+<table>
+	<tr>
+		<td>
+			<center><img src="img/Histogram_Deaths_Per_Million.png"></center>
+		</td>
+		<td>
+			<center><img src="img/Histogram_log_DeathsPerMillion.png"></center>
+		</td>
+	<tr>
+</table>
+	
 
 
 <h3>Date Preparation</h3>
