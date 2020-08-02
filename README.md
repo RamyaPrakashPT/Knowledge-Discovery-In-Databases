@@ -52,7 +52,9 @@
 
 
 <h3>Data Understanding and EDA</h3>
-We have used different data and merged them together using the selected columns of our interest. Our project focuses on the Covid-19 pandemic in the United States. The names of the data can be found in the src code. Below is a  brief introduction of each data used.
+We have used different data and merged them together using the selected columns of our interest. Our project focuses on the Covid-19 pandemic in the United States. The names of the data can be found in the src code. Below is a  brief introduction of each data used:
+
+
 
 GOVERNORS.csv: This data contains the governors sex, data of birth and inauguration date for each state. It was obtained from Wikipedia. 
 
