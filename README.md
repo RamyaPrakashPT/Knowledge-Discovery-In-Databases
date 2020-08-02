@@ -98,7 +98,32 @@ over the coronavirus in an effort to enhance the federal government’s response
 		<td>
 			<center><img src="img/Histogram_log_DeathsPerMillion.png"></center>
 		</td>
+	</tr>
 	<tr>
+		<td>
+			<center><img src="img/Histogram_GDP_Billions.png"></center>
+		</td>
+		<td>
+			<center><img src="img/Histogram_Gov_Age_at_Onset.png"></center>
+		</td>
+	</tr>
+	<tr>
+		<tr>
+		<td>
+			<center><img src="img/Histogram_Gov_Tenure_at_Onset.png"></center>
+		</td>
+		<td>
+			<center><img src="img/Histogram_Testing_Rate.png"></center>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<center><img src="img/Histogram_Med_HHI_thousands.png"></center>
+		</td>
+		<td>
+			<center><img src="img/Histogram_Pct_65Plus.png"></center>
+		</td>
+	</tr>
 </table>
 	
 
