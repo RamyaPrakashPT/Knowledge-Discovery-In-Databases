@@ -55,7 +55,7 @@
 
 
 <h3>Date Preparation</h3>
-<p>We merged data from nine different publicly-available online sources (listed in the Data Sources section above) to create a base data set containing variables of interest for all 50 states. The variables of interest from the data set we created are listed below. Of those, only Incident_Rate and Testing_Rate were taken directly from a source data set. The other ten columns were derived from features provided by the various data sources. Note that some of the predictor variables were ultimately dropped for various reasons. For example, Gov_Age_at_Onset and Pct_65Plus both were dropped due to high VIF scores indicating multicollinearity issues, and SAHO_Response_Time (the only column for which imputation was required) was dropped because it was not significant in either model (with p-values above 0.9).
+<p>We merged data from nine different publicly-available online sources (listed in the Data Sources section above) to create a base data set of potentially insightful features for all 50 states. The variables of interest from the data set we created are listed below. Of those, only Incident_Rate and Testing_Rate were taken directly from a source data set. The other ten columns were derived from features provided by the various data sources. Note that some of the predictor variables were ultimately dropped for various reasons. For example, Gov_Age_at_Onset and Pct_65Plus both were dropped due to high VIF scores indicating multicollinearity issues, and SAHO_Response_Time (the only column for which imputation was required) was dropped because it was not significant in either model (with p-values above 0.9).
 <ul>
 	<li>Dependent Variables</li>
 	<ul>
