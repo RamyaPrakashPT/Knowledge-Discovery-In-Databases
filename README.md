@@ -124,6 +124,27 @@ over the coronavirus in an effort to enhance the federal government’s response
 			<center><img src="img/Histogram_Pct_65Plus.png"></center>
 		</td>
 	</tr>
+	<tr>
+		<td>
+			<center><img src="img/Histogram_Population_Density.png"></center>
+		</td>
+		<td>
+			<center><img src="img/Histogram_SAHO_Response_Time.png"></center>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<center><img src="img/Boxplot_Death_Rate.png"></center>
+		</td>
+		<td>
+			<center><img src="img/Boxplot_Incident_Rate.png"></center>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<center><img src="img/Boxplot_Testing_Rate.png"></center>
+		</td>
+	</tr>
 </table>
 	
 
