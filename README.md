@@ -1,11 +1,8 @@
-<div align=”center”>
-	
-<h1> COVID-19: Impact of state governor and controlling features </h1>
-<h2> Knowledge Discovery in Databases (DSBA-6162) Final Project </h2>
-<h2> for University of North Carolina at Charlotte (UNCC) </h2>
+<h1 align="center"> COVID-19: Impact of state governor and controlling features </h1>
+<h2 align="center"> Knowledge Discovery in Databases (DSBA-6162) Final Project </h2>
+<h2 align="center"> for University of North Carolina at Charlotte (UNCC) </h2>
 
-</div>
- 
+
 <h3>Team Members:</h3> 
 <ul>
 <li>Hari Chamlagai     | https://github.com/chamlagaig</li>
