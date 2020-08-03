@@ -72,21 +72,21 @@ over the coronavirus in an effort to enhance the federal government’s response
 <h3>Data Understanding and EDA</h3>
 <p>We have used different data and merged them together using the selected columns of our interest. Our project focuses on the Covid-19 pandemic in the United States. The names of the data can be found in the src code. Below is a  brief introduction of each data used:</p>
 <ol>
-<li>07-24-2020_US.csv: This data is about the daily report of Covid-19 in the United States which contains information like incident rate, deaths, confirms, recovered, mortality rate etc for each state. The data was obtained from the COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University.</li>
+	<li><b>07-24-2020_US.csv:</b> This data is about the daily report of Covid-19 in the United States which contains information like incident rate, deaths, confirms, recovered, mortality rate etc for each state. The data was obtained from the COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University.</li>
 
-<li>GOVERNORS.csv: This data contains the governors sex, data of birth and inauguration date for each state. It was obtained from Wikipedia.</li> 
+<li><b>GOVERNORS.csv:</b> This data contains the governors sex, data of birth and inauguration date for each state. It was obtained from Wikipedia.</li> 
 
-<li>CENSUS_State_Populations.csv: This data is used to obtain the population information which is used to calculate the deaths per million for each state. The data was obtained from the US Census Bureau. </li>
+<li><b>CENSUS_State_Populations.csv:</b> This data is used to obtain the population information which is used to calculate the deaths per million for each state. The data was obtained from the US Census Bureau. </li>
 
-<li>CENSUS_StateAreaMeasurements.csv: This data obtained from the US Census Bureau gives the area of states. This data is used to obtain the population density for each state.</li>
+<li><b>CENSUS_StateAreaMeasurements.csv:</b> This data obtained from the US Census Bureau gives the area of states. This data is used to obtain the population density for each state.</li>
 
-<li>HH_Income.csv: This data obtained from the Kaiser Family Foundation contains the median family income for each state. </li>
+<li><b>HH_Income.csv:</b> This data obtained from the Kaiser Family Foundation contains the median family income for each state. </li>
 
-<li>State_GDP.csv: This data obtained from the Bureau of Economic Analysis, U.S. Department of Commerce. It contains the GDP of each state. </li>
+<li><b>State_GDP.csv:</b> This data obtained from the Bureau of Economic Analysis, U.S. Department of Commerce. It contains the GDP of each state. </li>
 
-<li>State_Stay_At_Home_Dates.csv: This data is used to obtain the stay at home order for each state. Nine states have missing values because the state at home order was not issued in those states when the data was published. </li>
+<li><b>State_Stay_At_Home_Dates.csv:</b> This data is used to obtain the stay at home order for each state. Nine states have missing values because the state at home order was not issued in those states when the data was published. </li>
 
-<li>Population_Distribution_by_Age.csv: This data obtained from the Kaiser Family Foundation  is used to obtain the population of 65+ people in each state. </li>
+<li><b>Population_Distribution_by_Age.csv:</b> This data obtained from the Kaiser Family Foundation  is used to obtain the population of 65+ people in each state. </li>
 
 <p>After the base data set is created, different types of exploratory data analysis are performed to obtain the   underlying patterns, structure,trends and relationships among different variables. Histograms and box plots are used to check the normality and distribution of variables like Incident_Rate, DeathPerMillion and LogDeathPerMillion etc. Heatmap is used to check the correlation among our dependent and predictive variables. Scatter plots matrix is used to visualize the relationship among our variables of interest. Similarly, diagnostic plots matrix is used to visualize the relationship between actual virus predicted incident rate for both training and testing data.</p>
 <p>We examined the distribution density of the numeric variables of interest and transformed them as required for our modeling.</p>
@@ -150,7 +150,7 @@ over the coronavirus in an effort to enhance the federal government’s response
 
 
 <h3>Date Preparation</h3>
-<p>We merged data from nine different publicly-available online sources (listed in the Data Sources section above) to create a base data set of potentially insightful features for all 50 states. The variables of interest from the data set we created are listed below. Of those, only Incident_Rate and Testing_Rate were taken directly from a source data set. The other ten columns were derived from features provided by the various data sources. Note that some of the predictor variables were ultimately dropped for various reasons. For example, Gov_Age_at_Onset and Pct_65Plus both were dropped due to high VIF scores indicating multicollinearity issues, and SAHO_Response_Time (the only column for which imputation was required) was dropped because it was not significant in either model (with p-values above 0.9).
+<p>We merged data from nine different publicly-available online sources (listed in the Data Sources section above) to create a base data set of potentially insightful features for all 50 states. The variables of interest from the data set we created are listed below. Of those, only Incident_Rate and Testing_Rate were taken directly from a source data set. The other ten columns were derived from features provided by the various data sources. Note that some of the predictor variables were ultimately dropped for various reasons. For example, Gov_Age_at_Onset and Pct_65Plus both were dropped due to high VIF scores indicating multicollinearity issues, and SAHO_Response_Time (the only column for which imputation was required) was dropped because it was not significant in either model (with p-values above 0.9).</p>
 <ul>
 	<li>Dependent Variables</li>
 	<ul>
@@ -186,6 +186,25 @@ over the coronavirus in an effort to enhance the federal government’s response
 
 
 <h3>Machine Learning</h3>
+<p>Feature selection is one of the first and important steps while performing any machine learning task.We performed feature selection to select the most important features using Lasso Regression for the regression problem of predicting, one with Incident_Rate as the dependent variable and another with log_DeathsPerMillion as the dependent variable.</p>
+<p>We first performed feature selection using the entire dataset and then with the following potential predictor variables. The potential predictor variables to investigate are the following:</p>
+<ul>
+<li>Testing_Rate</li>
+<li>Sex</li>
+<li>Party</li>
+<li>Gov_Age_at_Onset</li>
+<li>Gov_Tenure_at_Onset</li>
+<li>SAHO_Response_Time</li>
+<li>Population_Density</li>
+<li>Med_HHI_thousands</li>
+<li>GDP_Billions</li>
+<li>Pct_65Plus</li>
+</ul>
+<p>Lasso regression returns zero for some features coefficients when the features are redundant.This would help us confirm our variables of interest are good predictors.</p>
+
+<p><b> Feature Selection: Incident_Rate Model</b></p>
+![IncidentRateModel](img/Model_Incident_Rate1.png)
+
 
 <p>Incident_Rate Model Results (with OLS fit to all 50 states):</p>
 
