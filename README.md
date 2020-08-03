@@ -47,10 +47,15 @@
 
 <h3>Application of the CRISP-DM Process</h3>
 <p>The CRISP-DM process breaks down the data mining workflow into six major phases namely Business Understanding, Data Understanding, Data Preparation, Modeling, Evaluation and Deployment. In this project, we worked on the first five phases.</p>
+
 <p>While working on the Business Understanding phase, we decided to work on finding out how the different factors related to the State Governor have influenced the spread of Coronavirus infection in each state. We decided to look at when the schools were closed down in each state and how the political affiliation, age, gender and other factors related to each state’s Governor has impacted the containment of the infection.</p>
+
 <p>Based on the outcome of the Business Understanding phase, in Data Understanding phase we started researching what kind of data we need and found out that we need the COVID-19 counts for each state at different time intervals, the Governor details for each state, the school closing information dataset along with few other supporting dataset.</p>
+
 <p>In the Data Preparation phase, we cleaned each of the datasets and merged them together into one single dataset. We then looked at each variable, their distribution, variance and did Exploratory Data Analysis to make the data ready for modeling. We used Lasso regression to find out which features are more significant for our model.</p>
+
 <p>In the Modeling phase, we used Linear Regression models to find the trends and patterns of the spread of the infection in each state and tried to find their relationships with Governor’s attributes.</p>
+
 <p>We utilized the Evaluation phase to evaluate the model statistics and find inferences from the results.</p>
 
 
@@ -65,7 +70,6 @@ over the coronavirus in an effort to enhance the federal government’s response
 <p><b>CDC Weekly Surveillance Summary of U.S. COVID-19 Activity:</b></p> <p>https://www.cdc.gov/coronavirus/2019-ncov/covid-data/covidview/index.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fcovid-data%2Fcovidview.html</p>
 
 <p><b>COVID-19 Data Processing Ideas:</b></p> <p>https://towardsdatascience.com/covid-19-data-processing-58aaa3663f6</p>
-
 
 
 
@@ -89,6 +93,7 @@ over the coronavirus in an effort to enhance the federal government’s response
 <li><b>Population_Distribution_by_Age.csv:</b> This data obtained from the Kaiser Family Foundation  is used to obtain the population of 65+ people in each state. </li>
 
 <p>After the base data set is created, different types of exploratory data analysis are performed to obtain the   underlying patterns, structure,trends and relationships among different variables. Histograms and box plots are used to check the normality and distribution of variables like Incident_Rate, DeathPerMillion and LogDeathPerMillion etc. Heatmap is used to check the correlation among our dependent and predictive variables. Scatter plots matrix is used to visualize the relationship among our variables of interest. Similarly, diagnostic plots matrix is used to visualize the relationship between actual virus predicted incident rate for both training and testing data.</p>
+
 <p>We examined the distribution density of the numeric variables of interest and transformed them as required for our modeling.</p>
 <table>
 	<tr>
@@ -150,7 +155,7 @@ over the coronavirus in an effort to enhance the federal government’s response
 
 
 <h3>Date Preparation</h3>
-<p>We merged data from nine different publicly-available online sources (listed in the Data Sources section above) to create a base data set of potentially insightful features for all 50 states. The variables of interest from the data set we created are listed below. Of those, only Incident_Rate and Testing_Rate were taken directly from a source data set. The other ten columns were derived from features provided by the various data sources. Note that some of the predictor variables were ultimately dropped for various reasons. For example, Gov_Age_at_Onset and Pct_65Plus both were dropped due to high VIF scores indicating multicollinearity issues, and SAHO_Response_Time (the only column for which imputation was required) was dropped because it was not significant in either model (with p-values above 0.9).</p>
+<p>We merged data from nine different publicly-available online sources (listed in the Data Sources section above) to create a base data set of potentially insightful features for all 50 states. The variables of interest from the data set we created are listed below. Of those, only <i>Incident_Rate</i> and <i>Testing_Rate</i> were taken directly from a source data set. The other ten columns were derived from features provided by the various data sources. Note that some of the predictor variables were ultimately dropped for various reasons. For example, <i>Gov_Age_at_Onset</i> and <i>Pct_65Plus</i> both were dropped due to high VIF scores indicating multicollinearity issues, and <i>SAHO_Response_Time</i> (the only column for which imputation was required) was dropped because it was not significant in either model (with p-values above 0.9).</p>
 <ul>
 	<li>Dependent Variables</li>
 	<ul>
@@ -174,11 +179,11 @@ over the coronavirus in an effort to enhance the federal government’s response
 
 <p>Our primary source of data was the COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University. From that GitHub repository we were able to obtain a daily data set containing various metrics per state such as confirmed case count, death count, recovered count, active case count, incident rate, testing count, testing rate, hospitalization count, hospitalization rate, and mortality rate. For this analysis we worked with the data from the July 24, 2020 U.S. daily report.</p>
 
-<p>The two dependent variables used to build the two regression models for this analysis were taken from the Johns Hopkins data set. Incident_Rate is defined on the Johns Hopkins GitHub repository as the number of cases per 100,000 people. The Johns Hopkins data also contains a variable called Deaths which is the cumulative total number of deaths for each state, and the values in this column were divided by state population and then again divided by 1,000,000 to create the column DeathsPerMillion. Because DeathsPerMillion is highly right skewed a log transformation was applied to this column to create the variable log_DeathsPerMillion. Testing rate was the only column from the Johns Hopkins data set used as a predictor variable (Testing_Rate) in the model. This column is defined as the total number of test results per 100,000 persons.</p>
+<p>The two dependent variables used to build the two regression models for this analysis were taken from the Johns Hopkins data set. Incident_Rate is defined on the Johns Hopkins GitHub repository as the number of cases per 100,000 people. The Johns Hopkins data also contains a variable called Deaths which is the cumulative total number of deaths for each state, and the values in this column were divided by state population and then again divided by 1,000,000 to create the column <i>DeathsPerMillion</i>. Because DeathsPerMillion is highly right skewed a log transformation was applied to this column to create the variable <i>log_DeathsPerMillion</i>. Testing rate was the only column from the Johns Hopkins data set used as a predictor variable (Testing_Rate) in the model. This column is defined as the total number of test results per 100,000 persons.</p>
 
-<p>We obtained a number of other variables across a range of sources. Once columns for governor’s date of birth and date of inauguration were obtained, a column (Gov_Age_at_Onset) was created containing governor’s age in years as of January 21, 2020 (the date of the first confirmed U.S. case), and a column (Gov_Tenure_at_Onset) was created containing the number of months each governor had been in office as of January 21st. A wikipedia article (listed above) contained each governor’s political party (Democratic or Republican), and the images of each governor in the article were used to create a column for the sex of the governor. These two columns were then one-hot-encoded to produce the binary variables Sex_F (1 if female, 0 if male) and Party_Democratic (1 if democratic, 0 if republican). </p>
+<p>We obtained a number of other variables across a range of sources. Once columns for governor’s date of birth and date of inauguration were obtained, a column (<i>Gov_Age_at_Onset</i>) was created containing governor’s age in years as of January 21, 2020 (the date of the first confirmed U.S. case), and a column (<i>Gov_Tenure_at_Onset</i>) was created containing the number of months each governor had been in office as of January 21st. A wikipedia article (listed above) contained each governor’s political party (Democratic or Republican), and the images of each governor in the article were used to create a column for the sex of the governor. These two columns were then one-hot-encoded to produce the binary variables Sex_F (1 if female, 0 if male) and Party_Democratic (1 if democratic, 0 if republican). </p>
 
-<p>The Bureau of Economic Analysis provided state GDP in millions. The column GDP_Billions was created by dividing that number by 1,000. The U.S. Census provided state populations and state area measurements. These features were combined to create the column Population_Density, which is the number of people per square mile. The website www.kff.org provided state stay-at-home order dates, median household income by state, and the distribution of each state’s population by age group. The variable SAHO_Response_Time was derived from this data by calculating the number of days between January 21 and the date each state’s stay at home order went into effect. There were nine states that never issued stay-at-home orders, so these missing values were imputed with the date 07/24/2020. The variable Med_HHI_thousands was created by dividing the median household income in each state by 1,000. The variable Pct_65Plus was created by multiplying the value provided by kff.org by 100 so that the column contains a percentage instead of a ratio. </p>
+<p>The Bureau of Economic Analysis provided state GDP in millions. The column GDP_Billions was created by dividing that number by 1,000. The U.S. Census provided state populations and state area measurements. These features were combined to create the column <i>Population_Density</i>, which is the number of people per square mile. The website www.kff.org provided state stay-at-home order dates, median household income by state, and the distribution of each state’s population by age group. The variable <i>SAHO_Response_Time</i> was derived from this data by calculating the number of days between January 21 and the date each state’s stay at home order went into effect. There were nine states that never issued stay-at-home orders, so these missing values were imputed with the date 07/24/2020. The variable <i>Med_HHI_thousands</i> was created by dividing the median household income in each state by 1,000. The variable Pct_65Plus was created by multiplying the value provided by kff.org by 100 so that the column contains a percentage instead of a ratio. </p>
 
 <p>Dealing with class imbalance was not applicable in this regression context as the dependent variables were both continuous numeric variables. Regarding outliers, New York and New Jersey were outliers in terms of their deaths per million people. However, it was decided to leave them in the final analysis because we wanted to assess the response from all 50 states.</p>
 
@@ -186,7 +191,7 @@ over the coronavirus in an effort to enhance the federal government’s response
 
 
 <h3>Machine Learning</h3>
-<p>Feature selection is one of the first and important steps while performing any machine learning task.We performed feature selection to select the most important features using Lasso Regression for the regression problem of predicting, one with Incident_Rate as the dependent variable and another with log_DeathsPerMillion as the dependent variable.</p>
+<p>Feature selection is one of the first and important steps while performing any machine learning task.We performed feature selection to select the most important features using Lasso Regression for the regression problem of predicting, one with <b>Incident_Rate</b> as the dependent variable and another with <b>log_DeathsPerMillion</b> as the dependent variable.</p>
 <p>We first performed feature selection using the entire dataset and then with the following potential predictor variables. The potential predictor variables to investigate are the following:</p>
 <ul>
 <li>Testing_Rate</li>
@@ -206,7 +211,7 @@ over the coronavirus in an effort to enhance the federal government’s response
 
 <p><img src="img/Model_Incident_Rate1.png"></p>
 
-<p>According to the Lasso regression results above, the following variables all have coefficients with very small magnitude: Confirmed, People_Tested, POPESTIMATE2019, and TotalArea_SqMi. This supports our suspicion that variables which normalize for things like population size or land area (such as Testing_rate or Population_Density respectively) will be more useful than their raw-count versions. </p>
+<p>According to the Lasso regression results above, the following variables all have coefficients with very small magnitude: <i>Confirmed, People_Tested, POPESTIMATE2019, and TotalArea_SqMi</i>. This supports our suspicion that variables which normalize for things like population size or land area (such as Testing_rate or Population_Density respectively) will be more useful than their raw-count versions. </p>
 
 <p>Now performing Lasso Regression on only the variables we want to use in the model.</p>
 
