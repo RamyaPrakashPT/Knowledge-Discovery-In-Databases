@@ -203,16 +203,27 @@ over the coronavirus in an effort to enhance the federal government’s response
 <p>Lasso regression returns zero for some features coefficients when the features are redundant.This would help us confirm our variables of interest are good predictors.</p>
 
 <p><b> Feature Selection: Incident_Rate Model</b></p>
-<img src="img/Model_Incident_Rate1.png">
 
+<p><img src="img/Model_Incident_Rate1.png"></p>
 
-<p>Incident_Rate Model Results (with OLS fit to all 50 states):</p>
+<p>According to the Lasso regression results above, the following variables all have coefficients with very small magnitude: Confirmed, People_Tested, POPESTIMATE2019, and TotalArea_SqMi. This supports our suspicion that variables which normalize for things like population size or land area (such as Testing_rate or Population_Density respectively) will be more useful than their raw-count versions. </p>
 
-![IncidentRateModel](https://github.com/RamyaPrakashPT/Knowledge-Discovery-In-Databases/blob/master/img/IncidentRate_Coeffs.png)
+<p>Now performing Lasso Regression on only the variables we want to use in the model.</p>
 
-<p>log_DeathsPerMillion Model Results (with OLS fit to all 50 states):</p>
+<p><img src="img/Model_Incident_Rate2.png"></p>
 
-![DeathsPerMillionModel](https://github.com/RamyaPrakashPT/Knowledge-Discovery-In-Databases/blob/master/img/DeathRate_Coeffs.png)
+<p>It appears that the sex of the governor is not an important variable when predicting Incident_Rate. However, we may keep it in the model to control for Sex while explaining governor effect.</p>
+
+<p><b>Feature Selection: log_DeathsPerMillion Model</b></p>
+
+<p><img src="img/Model_Deaths_per_Million1.png"></p>
+
+<p>Now performing Lasso Regression on only the variables we want to use in the model.</p>
+
+<p><img src="img/Model_Deaths_per_Million2.png"></p>
+
+<p>According to the Lasso Regression results, we should remove the following variables: <i>Pct_65Plus, Sex_F, Party_Democratic, & Gov_Age_at_Onset.</i></p>
+
 
 
 
