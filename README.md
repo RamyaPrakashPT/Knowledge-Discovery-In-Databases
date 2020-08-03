@@ -203,7 +203,7 @@ over the coronavirus in an effort to enhance the federal government’s response
 <p>Lasso regression returns zero for some features coefficients when the features are redundant.This would help us confirm our variables of interest are good predictors.</p>
 
 <p><b> Feature Selection: Incident_Rate Model</b></p>
-![IncidentRateModel](img/Model_Incident_Rate1.png)
+<img src="img/Model_Incident_Rate1.png">
 
 
 <p>Incident_Rate Model Results (with OLS fit to all 50 states):</p>
