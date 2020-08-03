@@ -281,7 +281,7 @@ over the coronavirus in an effort to enhance the federal government’s response
 <li>You can also get the source code of the project by going to src folder</li>
 </ul>
 
-
+<br>
 <p>In the future, we want to accomplish the following tasks:</p>
 <ul>
 <li>Enhance our model using school closures dataset</li>
