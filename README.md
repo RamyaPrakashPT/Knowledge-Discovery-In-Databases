@@ -225,6 +225,16 @@ over the coronavirus in an effort to enhance the federal government’s response
 <p>According to the Lasso Regression results, we should remove the following variables: <i>Pct_65Plus, Sex_F, Party_Democratic, & Gov_Age_at_Onset.</i></p>
 
 
+<h3>Linear Regression</h3>
+<p>After data preparation, the next in this project was to implement a regression algorithm, where we used a linear regression model. Linear regression is a good technique to use when finding linear relationships between different variables. We implement two linear regression models, one with Incident_rate and the other log_DeathsPerMillons. Based on the performance of the first model from the R-Squared value that tells us the performance from a scale of 0 to 1 where 1 is a perfect variation while 0 indicates no variation. The score for the Incident_rate returned .602, which a is medium performance level for the model. As for the root mean square error for this model tells us the measures of how far the regression line data points are or how concentrated the data is. The model received a high value of 326.566 on train set, while the value is 581.691 on a test set. These two data variables tell us that the model is performing well and the data has a high range of data variation.</p>
+
+<p>As for the log_DeathsPerMillons, we also received similar scores. The R-Squared value was a .557 which shows a good performance. As for the root mean square error gave a .669 and a .854, indicating a low form of variation in the dataset. This model gave us a low RMSE and a medium R-sq value, so out of the two models this wasn’t the best model.</p>
+
+<p>TABLE 1: Incident_Rate Model Results (with OLS fit to all 50 states)</p>
+
+<p><img src="img/Table1_Inc_Rate_Model_Results.png"></p>
+
+
 
 
 <h3>Evaluation</h3>  	  	
