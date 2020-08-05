@@ -23,7 +23,7 @@
 
 
 <h3>Research Question</h3>
-<p>What is the impact of the State Governor’s Political Party in addressing Covid-19 pandemic?</p>
+<p>What is the impact of a state governor’s political party on addressing the Covid-19 pandemic, as determined by regressing state incident rate as well as state death rate on governor political party after attempting to control for a variety of potentially informative governor-related features (such as sex, age, and time in office) and state-level features (such as testing rate, population density, median household income, and gdp)?</p>
 
 
 <h3>Data Sources</h3>
